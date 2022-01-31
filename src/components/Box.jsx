@@ -3,6 +3,8 @@ import * as React from "react";
 const Box = (props) => {
   return (
     <div
+    id={props.id}
+    onClick={props.handleColorChange}
       style={{
         width: "180px",
         height: "180px",
@@ -11,7 +13,7 @@ const Box = (props) => {
         display: "inline-block",
       }}
     >
-      <span>{/* Add rgb value from props */}</span>
+      <span>{props.color}</span>
     </div>
   );
 };
